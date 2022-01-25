@@ -1,0 +1,4 @@
+
+.PHONY: frida-only
+frida-only: test_shm test_python ready $(PROGS)
+	-$(MAKE) -C frida_mode
